@@ -1,0 +1,7 @@
+#picturebox {
+    display:flex;
+    flex-wrap: wrap;
+}
+#picturebox img {
+    border: 2px solid black;
+}
