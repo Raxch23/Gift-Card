@@ -18,7 +18,7 @@
         <h1>Gift Card Generator</h1>
     </header>
     <main class="row">
-        <div class="col-4">
+        <div class="col-4" id="form-column">
             <h2> Design Your Card</h2>
             <form id="message-form">
                 <div class="mb-3">
@@ -44,6 +44,16 @@
               <button type="submit" class="btn btn-primary">Submit</button>
            </form>
         </div>
+        <div class="col-4" id="button-column">
+            <h2> Save Your Card</h2>
+            <div id="button-box">
+                <button type="button" id="save">Save</button>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button type="button" id="reset">Start Over</button>
+            </div>
+        </div>
+
         <div class="col-8">
             <h2>Your Image</h2>
             <div id="single-picture"></div>

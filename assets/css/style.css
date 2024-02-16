@@ -14,3 +14,7 @@
     position: absolute;
     top: 50px;
 }
+#button-column{
+    display: none;
+}
+

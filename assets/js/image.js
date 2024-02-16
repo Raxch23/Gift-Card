@@ -25,8 +25,7 @@ document.getElementById("message-form").addEventListener("submit", function(even
         colorTheme
     }
     console.log(cardObject)
-    yourCards.push(cardObject)
-    localStorage.setItem("yourcards", JSON.stringify(yourCards))
+    localStorage.setItem("currentcard", JSON.stringify(cardObject))
     var messageCard=document.createElement("div")
     messageCard.setAttribute("data-color", cardObject.colorTheme)
     messageCard.setAttribute("class", "message-card")
@@ -34,11 +33,22 @@ document.getElementById("message-form").addEventListener("submit", function(even
         messageCard.style.color="white"
     }
     var subjectLine=document.createElement("h3")
-    subjectLine.textContent="to: "+cardObject.to+","
+    subjectLine.textContent="To: "+cardObject.to+","
     var messageLine=document.createElement("h4")
     messageLine.textContent=cardObject.message
     var closingLine= document.createElement("h4")
-    closingLine.textContent="from: "+cardObject.from;
+    closingLine.textContent="From: "+cardObject.from;
     messageCard.append(subjectLine, messageLine, closingLine)
     document.querySelector("#card-box").append(imageTag, messageCard)
+    document.getElementById("form-column").style.display="none"
+    document.getElementById("button-column").style.display="block"
+})
+document.getElementById("reset").addEventListener("click", function(){
+    document.location.href="index.html"
+})
+document.getElementById("save").addEventListener("click", function(){
+    var cardObject=JSON.parse(localStorage.getItem("currentcard"))
+    yourCards.push(cardObject)
+    localStorage.setItem("yourcards", JSON.stringify(yourCards))
+    document.location.href="yourcards.html"
 })
