@@ -5,3 +5,12 @@
 #picturebox img {
     border: 2px solid black;
 }
+#card-box{
+    position: relative;
+
+}
+.message-card{
+    background-color: white;
+    position: absolute;
+    top: 0;
+}
