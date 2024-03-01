@@ -7,19 +7,27 @@
 }
 #card-box{
     position: relative;
-    width: 30vw;
+    width: 400px;
 
 }
 #card-box img {
     width: 100%;
 }
+.light {
+    color:white
+}
+
+.dark{
+    color: black;
+}
+#button-column{
+    display: none;
+}
 .top-left{
     opacity: 1;
     position: absolute;
     top: 50px;
-}
-#button-column{
-    display: none;
+    left:25px
 }
 
 .top-center{
@@ -33,36 +41,49 @@
     opacity: 1;
     position: absolute;
     top: 50px;
-    right:0;
+    right:25px;
 }
-.top-left{
+.middle-left{
     opacity: 1;
     position: absolute;
-    top: 50px;
+    top: 50%;
+    left:25px;
 }
 
-.top-left{
+.middle-center{
     opacity: 1;
     position: absolute;
-    top: 50px;
+    top: 40%;
+    left:40%;
 }
-.top-left{
+.middle-right{
     opacity: 1;
     position: absolute;
-    top: 50px;
+    top: 50%;
+    right:25px
 }
-.top-left{
+.bottom-left{
     opacity: 1;
     position: absolute;
-    top: 50px;
+    bottom: 0;
+    left: 25px;
 }
-.top-left{
+.bottom-center{
     opacity: 1;
     position: absolute;
-    top: 50px;
+    bottom: 0;
+    left: 50%;
 }
-.top-left{
+.bottom-right{
     opacity: 1;
     position: absolute;
-    top: 50px;
+    bottom: 0;
+    right: 25px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
