@@ -7,9 +7,13 @@
 }
 #card-box{
     position: relative;
+    width: 30vw;
 
 }
-.message-card{
+#card-box img {
+    width: 100%;
+}
+.top-left{
     opacity: 1;
     position: absolute;
     top: 50px;
@@ -18,3 +22,47 @@
     display: none;
 }
 
+.top-center{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+}
+
+.top-right{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+    right:0;
+}
+.top-left{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+}
+
+.top-left{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+}
+.top-left{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+}
+.top-left{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+}
+.top-left{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+}
+.top-left{
+    opacity: 1;
+    position: absolute;
+    top: 50px;
+}

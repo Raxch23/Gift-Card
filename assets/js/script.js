@@ -4,8 +4,6 @@ var secretKey = "tLxOXBxVmBk3PeUzYuiAhr1MWH-HTTy3Crg4fIDaax8"
 
 
 
-
-
 function fetchpictures(term) {
     document.getElementById("picturebox").innerHTML = ""
     const testUrl = "https://api.unsplash.com/search/photos?page=1&query=" + term + "&orientation=portrait&client_id=" + accessKey
@@ -19,16 +17,18 @@ function fetchpictures(term) {
             image.style.width = "250px"
             image.style.height = "auto"
             image.addEventListener("click", function () {
-                console.log(this)
-                if (this.getAttribute("data-selected") === "false") {
-                    this.setAttribute("data-selected", "true")
-                }
-                else {
-                    this.setAttribute("data-selected", "false")
-                }
-                if(this.getAttribute("data-selected")==="true"){
-                    localStorage.setItem("user-image", largeImage)
-                }
+                console.log(this.src)
+                var selectedImage=this.src
+                localStorage.setItem("user-image", selectedImage)
+                // if (this.getAttribute("data-selected") === "false") {
+                //     this.setAttribute("data-selected", "true")
+                // }
+                // else {
+                //     this.setAttribute("data-selected", "false")
+                // }
+                // if(this.getAttribute("data-selected")==="true"){
+                //     localStorage.setItem("user-image", largeImage)
+                // }
                 document.location.href="image.html"
             })
             //if (image.getAttribute("data-selected") === "true") {
