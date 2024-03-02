@@ -16,9 +16,9 @@ document.getElementById("message-form").addEventListener("submit", function (eve
     var messageCard = document.createElement("div")
     cardBox.innerHTML=""
     var position = document.querySelector(".form-select").value
-    console.log(event.target[4])
+    console.log(event.target[6])
     var colorTheme = ""
-    if (event.target[4].checked) {
+    if (event.target[6].checked) {
         colorTheme = "light"
     }
     else {
@@ -27,6 +27,8 @@ document.getElementById("message-form").addEventListener("submit", function (eve
     var cardObject = {
         imgsrc: userImage,
         to: document.getElementById("subject").value,
+        to_email:document.getElementById("to-email").value,
+        from_email:document.getElementById("from-email").value,
         message: document.getElementById("message").value,
         from: document.getElementById("from").value,
         colorTheme,
