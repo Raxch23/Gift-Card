@@ -1,5 +1,27 @@
+body {
+    border: 1px solid black;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: url("../G56671__03033.jpeg");
+}
+header{
+    display: flex;
+    background-color: pink;
+}
+
+h1{
+font-family:"Instrument Serif",serif;
+font-weight: bold;
+}
+h2{
+    font-family: "Instrument Serif", serif;
+}
+#Search-btn{
+    background-color: pink;
+    border: 1px solid grey;
+}
 #picturebox {
-    display:flex;
+    display:flex;   
     flex-wrap: wrap;
 }
 #picturebox img {
