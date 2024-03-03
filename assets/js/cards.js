@@ -1,7 +1,9 @@
 
-const cardArray = JSON.parse(localStorage.getItem("yourcards"))
+const cardArray = JSON.parse(localStorage.getItem("yourcards"))||[]
 let saveCard = document.getElementById("save-card")
-
+if(cardArray.length===0){
+    document.getElementById("subtitle").setAttribute("class", "hide")
+}
 
 function buildCards(){
     saveCard.innerHTML=""

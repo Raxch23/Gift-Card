@@ -42,6 +42,7 @@ function fetchpictures(term) {
 
 
 document.getElementById("Search-btn").addEventListener("click", function () {
+    document.getElementById("select").removeAttribute("class")
     var searchTerm = document.getElementById("Search-term").value
     fetchpictures(searchTerm)
 })
