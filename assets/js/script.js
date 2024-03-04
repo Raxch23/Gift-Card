@@ -14,7 +14,7 @@ function fetchpictures(term) {
             var image = document.createElement("img")
             image.setAttribute("src", imgSrc)
             image.setAttribute("data-selected", "false")
-            image.style.width = "125px"
+            image.style.width = "150px"
             image.style.height = "auto"
             image.addEventListener("click", function () {
                 console.log(this.src)
