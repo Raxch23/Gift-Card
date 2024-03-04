@@ -1,31 +1,42 @@
 body {
-    border: 1px solid black;
-    max-width: 1000px;
     margin: 0 auto;
     background-image: url("../G56671__03033.jpeg");
 }
 header{
     display: flex;
     background-color: pink;
+    padding: 2rem;
 }
 
 h1{
 font-family:"Instrument Serif",serif;
 font-weight: bold;
+letter-spacing: 4px;
+font-size: 50px;
 }
+
 h2{
     font-family: "Instrument Serif", serif;
 }
+
+#main-container{
+    width: 90vw;
+    margin:0 auto;
+}
+
 #Search-btn{
     background-color: pink;
     border: 1px solid grey;
 }
 #picturebox {
-    display:flex;   
+    width: 600px;
+    display:flex;
     flex-wrap: wrap;
 }
+
 #picturebox img {
     border: 2px solid black;
+    flex-grow: 2;
 }
 #card-box{
     position: relative;

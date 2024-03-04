@@ -8,13 +8,13 @@ function fetchpictures(term) {
     document.getElementById("picturebox").innerHTML = ""
     const testUrl = "https://api.unsplash.com/search/photos?page=1&query=" + term + "&orientation=portrait&client_id=" + accessKey
     fetch(testUrl).then(response => response.json()).then(data => {
-        for (var i = 1; i < data.results.length; i++) {
+        for (var i = 2; i < data.results.length; i++) {
             var imgSrc = data.results[i].urls.thumb;
             var largeImage= data.results[i].urls.full
             var image = document.createElement("img")
             image.setAttribute("src", imgSrc)
             image.setAttribute("data-selected", "false")
-            image.style.width = "250px"
+            image.style.width = "125px"
             image.style.height = "auto"
             image.addEventListener("click", function () {
                 console.log(this.src)
