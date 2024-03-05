@@ -14,26 +14,14 @@ function fetchpictures(term) {
             var image = document.createElement("img")
             image.setAttribute("src", imgSrc)
             image.setAttribute("data-selected", "false")
-            image.style.width = "150px"
-            image.style.height = "auto"
             image.addEventListener("click", function () {
                 console.log(this.src)
                 var selectedImage=this.src
                 localStorage.setItem("user-image", selectedImage)
-                // if (this.getAttribute("data-selected") === "false") {
-                //     this.setAttribute("data-selected", "true")
-                // }
-                // else {
-                //     this.setAttribute("data-selected", "false")
-                // }
-                // if(this.getAttribute("data-selected")==="true"){
-                //     localStorage.setItem("user-image", largeImage)
-                // }
+            
                 document.location.href="image.html"
             })
-            //if (image.getAttribute("data-selected") === "true") {
-                //console.log(image)
-           // }
+      
             document.getElementById("picturebox").appendChild(image)
 
         }
