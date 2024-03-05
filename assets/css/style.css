@@ -12,19 +12,55 @@ header {
   color: white;
   padding: 2rem;
 }
+header a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+  font-weight: bolder;
+}
 .btn {
   background-color: #f58f8f;
   border: 0px;
 }
-.btn:hover {
+.btn:hover,
+.btn:visited,
+.btn:active,
+.btn:link,
+.btn-primary:focus-visible {
   border: 2px solid grey;
   background-color: #f58f8f;
 }
-img{
-    box-shadow: 1px 1px 5px grey;
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:active,
+.btn-primary:link,
+.btn-primary:focus-visible {
+  border: 2px solid grey;
+  background-color: #f58f8f;
 }
-form{
-    color: black
+#save:active {
+  border: 2px solid grey;
+  background-color: #f58f8f;
+}
+#message-form button:active {
+  border: 2px solid grey;
+  background-color: #f58f8f;
+}
+.form-check-input {
+  border: 2px solid grey;
+}
+.form-check-input:checked {
+    border: 2px solid grey;
+    background-color: #f58f8f;
+}
+img {
+  box-shadow: 1px 1px 5px grey;
+}
+form {
+  color: black;
 }
 i {
   color: white;
@@ -36,7 +72,7 @@ h1 {
   font-size: 50px;
   border: 2px solid white;
   margin: 0 auto;
-  width: 95%;
+  /* width: 95%; */
   text-align: center;
   padding: 10px 0;
 }
@@ -49,6 +85,7 @@ h2 {
   background-color: #f58f8f;
   padding: 10px 0;
   text-align: center;
+  border-radius: 10px;
 }
 
 #main-container {
@@ -80,17 +117,17 @@ h2 {
 #card-box img {
   width: 100%;
 }
-#your-img{
- display: flex;
- flex-direction: column;
- align-items: center;
+#your-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#your-img h2{
-    width: 70%;
+#your-img h2 {
+  width: 70%;
 }
 
-.card-img{
-    width: 400px;
+.card-img {
+  width: 400px;
 }
 .light {
   color: white;
