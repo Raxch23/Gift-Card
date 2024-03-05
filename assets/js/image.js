@@ -2,14 +2,6 @@ var userImage = localStorage.getItem("user-image")
 
 var imageTag = document.querySelector(".card-img")
 imageTag.src = userImage;
-// var savebtn = document.createElement("button")
-// savebtn.setAttribute("type", "button")
-// savebtn.setAttribute("class", "btn btn-primary")
-// savebtn.setAttribute("id", "save")
-// savebtn.textContent = "Save Your Card"
-// usercard.append(cardBox, savebtn)
-
-
 
 var yourCards = JSON.parse(localStorage.getItem("yourcards")) || []
 
@@ -17,7 +9,7 @@ document.getElementById("message-form").addEventListener("submit", function (eve
 
     event.preventDefault()
     var messageCard = document.getElementById("message-card")
-    messageCard.innerHTML=""
+    messageCard.innerHTML = ""
     var position = document.querySelector(".form-select").value
     var colorTheme = ""
     if (event.target[6].checked) {
@@ -55,12 +47,8 @@ document.getElementById("message-form").addEventListener("submit", function (eve
     var closingLine = document.createElement("h4")
     closingLine.textContent = "From: " + cardObject.from;
     messageCard.append(subjectLine, messageLine, closingLine)
-    
-})
 
-// document.getElementById("reset").addEventListener("click", function () {
-//     document.location.href = "index.html"
-// })
+})
 
 document.getElementById("save").addEventListener("click", function () {
 

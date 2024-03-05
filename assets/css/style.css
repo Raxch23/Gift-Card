@@ -1,7 +1,5 @@
 body {
   margin: 0 auto;
-  /* background-image: linear-gradient(to bottom right, #f58f8f4d,#f0bdbd ); */
-  /* background-color: #f86565be; */
   background-repeat: no-repeat;
   height: 100vh;
   color: white;
@@ -53,9 +51,10 @@ a:hover {
   border: 2px solid grey;
 }
 .form-check-input:checked {
-    border: 2px solid grey;
-    background-color: #f58f8f;
+  border: 2px solid grey;
+  background-color: #f58f8f;
 }
+
 img {
   box-shadow: 1px 1px 5px grey;
 }
@@ -72,7 +71,6 @@ h1 {
   font-size: 50px;
   border: 2px solid white;
   margin: 0 auto;
-  /* width: 95%; */
   text-align: center;
   padding: 10px 0;
 }
