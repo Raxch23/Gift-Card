@@ -54,12 +54,34 @@ a:hover {
   border: 2px solid grey;
   background-color: #f58f8f;
 }
-#Search-term{
-border-radius: 7px;
+#Search-term {
+  border-radius: 7px;
 }
 
-#Search-term:focus-visible {
+#Search-term:focus-visible,
+#subject:focus-visible,
+#to-email:focus-visible,
+#from-email:focus-visible,
+#message:focus-visible,
+#from:focus-visible,
+#color-light:focus-visible {
   outline: 2px solid grey;
+  border-color: white;
+}
+
+#Search-term:focus,
+#subject:focus,
+#to-email:focus,
+#from-email:focus,
+#message:focus,
+#color-light:focus,
+#from:focus {
+  outline: 2px solid grey;
+  border-color: white;
+}
+.form-select:focus {
+    border-color: white;
+    outline: 2px solid grey;
 }
 img {
   box-shadow: 1px 1px 5px grey;
