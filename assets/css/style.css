@@ -54,7 +54,13 @@ a:hover {
   border: 2px solid grey;
   background-color: #f58f8f;
 }
+#Search-term{
+border-radius: 7px;
+}
 
+#Search-term:focus-visible {
+  outline: 2px solid grey;
+}
 img {
   box-shadow: 1px 1px 5px grey;
 }
