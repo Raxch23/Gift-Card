@@ -1,5 +1,5 @@
 
-![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/rachiraesteve/Documents/CODING_BOOTCAMP/challenges/project1/Gift-Genie/assets/Screenshot%202024-03-06%20at%2023.21.58.png?version%3D1709768586784)
+![alt text](<assets/Screenshot 2024-03-06 at 23.21.58.png>)
 
 # Gift-Genie
 
