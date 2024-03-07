@@ -17,22 +17,24 @@ Welcome to Gift Genie! Busy individuals are able to generate a perfect gift card
 
  * Follow the below steps to generate yourself a gift, get well or a congratulation card(s)!
 
-1. Search for an image and select your favorite one!
+1. **Search for an image and select your favorite one!**
 
 ![alt text](assets/download-3.jpg)
 
-2. Now that your favorite image is selected, add a personalised a message! The position your message section, allows you to move your message on the card until you read your preferred position. You also have the option to change the text on your page to white or leave it in the default color of black.
+2. **Now that your favorite image is selected, add a personalised a message!**
+The position your message section, allows you to move your message on the card until you read your preferred position. You also have the option to change the text on your page to white or leave it in the default color of black.
 
 ![alt text](assets/download-1.jpg)
-3. You can now view your image + message!
+
+3. **You can now view your image + message!**
 
 ![alt text](assets/download-2.jpg)
 
-4. You also have the option to email, print or delete your final card
+4. **You also have the option to email, print or delete your final card!**
 
 ![alt text](<assets/Screenshot 2024-03-07 at 01.07.13.png>)
 
-5. To start over, all you need to is click on "gift genie"  and you'll be taken back to the first page.
+5. **To start over, all you need to is click on "gift genie"  and you'll be taken back to the first page.**
 
 # Deployed Site
 
